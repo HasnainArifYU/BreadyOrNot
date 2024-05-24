@@ -4,6 +4,9 @@ public class Sauces implements Topping{
 
     private String name;
 
+    public Sauces(String name) {
+        this.name = name;
+    }
 
     @Override
     public String getName() {
