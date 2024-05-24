@@ -57,5 +57,12 @@ public class LoadMenu {
 
         return sauces;
     }
+    public static void printNumberedNames(List<? extends Topping> toppingList) {
+        int counter = 1;
+        for (Topping topping : toppingList) {
+            System.out.println(counter + ". " + topping.getName());
+            counter++;
+        }
+    }
 
 }
