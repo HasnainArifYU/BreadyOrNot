@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Sandwich {
 
-    protected Bread bread;
+    private Bread bread;
     protected List<Topping> toppings;
     protected String size;
     protected boolean isToasted;
@@ -16,9 +16,6 @@ public class Sandwich {
         this.isToasted = isToasted;
     }
 
-    public Sandwich() {
-
-    }
 
     public Bread getBread() {
         return bread;
@@ -50,5 +47,15 @@ public class Sandwich {
 
     public void setToasted(boolean toasted) {
         isToasted = toasted;
+    }
+
+    public double getTotal() {
+        double total = 0;
+        total += bread.getPrice(size);
+        for (Topping topping : toppings) {
+            total+=topping.getPrice(size);
+
+        }
+        return total;
     }
 }

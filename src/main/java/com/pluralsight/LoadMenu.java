@@ -8,23 +8,35 @@ public class LoadMenu {
     public List<Meat> getMeatChoices() {
 
         List<Meat> meatChoices = new ArrayList<>();
-        meatChoices.add(new Meat("Chicken"));
-        meatChoices.add(new Meat("Steak"));
-        meatChoices.add(new Meat("Ham"));
-        meatChoices.add(new Meat("Salami"));
-        meatChoices.add(new Meat("Roast Beef"));
-        meatChoices.add(new Meat("Bacon"));
+        //meatChoices.add(new Meat("Chicken"));
+        //meatChoices.add(new Meat("Steak"));
+        //meatChoices.add(new Meat("Ham"));
+        //meatChoices.add(new Meat("Salami"));
+        //meatChoices.add(new Meat("Roast Beef"));
+        //meatChoices.add(new Meat("Bacon"));
 
         return meatChoices;
+    }
+
+    public List<Meat> getBread() {
+
+        List<Meat> breadChoices = new ArrayList<>();
+        breadChoices.add(new Meat("White"));
+        breadChoices.add(new Meat("Wheat"));
+        breadChoices.add(new Meat("Rye"));
+        breadChoices.add(new Meat("Wrap"));
+
+
+        return breadChoices;
     }
 
     public List<Cheese> getCheeses() {
 
         List<Cheese> cheeses = new ArrayList<>();
-        cheeses.add(new Cheese("American"));
-        cheeses.add(new Cheese("Provolone"));
-        cheeses.add(new Cheese("Swiss"));
-        cheeses.add(new Cheese("Cheddar"));
+        //cheeses.add(new Cheese("American"));
+        //cheeses.add(new Cheese("Provolone"));
+        //cheeses.add(new Cheese("Swiss"));
+        //cheeses.add(new Cheese("Cheddar"));
 
         return cheeses;
     }

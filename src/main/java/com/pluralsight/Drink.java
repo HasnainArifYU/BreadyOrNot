@@ -2,21 +2,22 @@ package com.pluralsight;
 
 public class Drink {
 
-    private String type;
+    private String name;
     private String size;
 
 
+
     public Drink(String type, String size) {
-        this.type = type;
+        this.name = type;
         this.size = size;
     }
 
-    public String getType() {
-        return type;
+    public String getName() {
+        return name;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getSize() {
@@ -25,5 +26,17 @@ public class Drink {
 
     public void setSize(String size) {
         this.size = size;
+    }
+    public double getPrice() {
+        switch (size.toLowerCase()) {
+            case "small":
+                return 2.0;
+            case "medium":
+                return 2.5;
+            case "large":
+                return 3.0;
+            default:
+                throw new IllegalArgumentException("Invalid size: " + size);
+        }
     }
 }
