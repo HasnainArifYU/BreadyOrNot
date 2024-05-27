@@ -242,10 +242,10 @@ public class UserInterface {
 
 
     private static Drink addDrink() {
-        System.out.println("Select drink size: (small, medium, large");
+        System.out.println("Select drink size: (small, medium, large)");
         String size = scanner.nextLine();
         size = size.toLowerCase();
-        System.out.println("Select drink flavor:");
+        System.out.println("Enter drink flavor:");
         String flavor = scanner.nextLine();
 
         return new Drink(flavor, size);

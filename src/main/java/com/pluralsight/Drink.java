@@ -41,6 +41,6 @@ public class Drink {
     }
 
     public void display() {
-        System.out.println(getName() + getSize());
+        System.out.println(getName() +" "+ getSize());
     }
 }

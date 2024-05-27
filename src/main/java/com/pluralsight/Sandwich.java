@@ -59,10 +59,10 @@ public class Sandwich {
     }
 
     public void displaySandwich() {
-        System.out.println("Bread: " + this.getBread());
+        System.out.println("Bread: " + this.bread.getType());
         System.out.println("Toppings : ");
         for (Topping topping : toppings) {
-            System.out.println(getToppings());
+            System.out.println(topping.getName());
         }
         System.out.println(this.size);
         if (isToasted) {

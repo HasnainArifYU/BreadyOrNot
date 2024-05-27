@@ -61,7 +61,7 @@ public class Order {
     }
 
     public void addChips(Chips chips) {
-        this.addChips(chips);
+        this.chips.add(chips);
     }
 
     public void displayOrderDetails() {
@@ -84,7 +84,7 @@ public class Order {
     public void createReceipt() {
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMdd-HHmmss");
         String dateTime = format.format(new Date());
-        String filename = "receipts/" + dateTime + ".txt";
+        String filename = dateTime + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             writer.write("Order Details:\n");
             writer.write("Sandwiches:\n");
