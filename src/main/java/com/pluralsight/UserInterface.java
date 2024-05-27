@@ -81,12 +81,12 @@ public class UserInterface {
     }
 
     private static Sandwich createSandwich() {
-        List<Topping> toppings = new ArrayList<>();
+        List<Topping> toppings = new ArrayList<>(); // to save selected toppings
         System.out.println(" Please choose your bread: ");
         System.out.println("1) White\n2) Wheat\n3) Rye\n4) Wrap");
         String breadInput = scanner.nextLine().trim();
         String bread;
-        switch (breadInput.toLowerCase()) {
+        switch (breadInput.toLowerCase()) { // taking either int or String inputs
             case "1":
             case "white":
                 bread = "White";
@@ -110,7 +110,7 @@ public class UserInterface {
         }
         Bread bread1 = new Bread(bread);
 
-        System.out.println("Sandwich size (Small, Medium, or Large):");
+        System.out.println("Sandwich size (Small, Medium, or Large):"); //size
         String size = scanner.nextLine().trim();
 
         System.out.println("Select Premium Toppings:");
@@ -148,7 +148,7 @@ public class UserInterface {
                 System.out.println("Invalid input. Defaulting to 'Steak'.");
                 break;
         }
-        System.out.print("Do you want extra " + meat + "? (yes/no): ");
+        System.out.print("Do you want extra " + meat + "? (yes/no): "); //Asking for extra meat
         boolean isExtraMeat = scanner.nextLine().trim().equalsIgnoreCase("yes");
         toppings.add(new Meat(meat, size, isExtraMeat));
 
@@ -218,30 +218,30 @@ public class UserInterface {
         }
         System.out.println("Select sauces (Enter the number or name, type 'done' to finish):");
         String[] sauces = {"Ketchup", "Ranch", "Thousand Islands", "Vinaigrette", "Mayo", "Mustard", "Au Jus", "Sauce"};
-        for (int i = 0; i < sauces.length; i++) {
+        for (int i = 0; i < sauces.length; i++) { // to display numbers next to the items
             System.out.println((i + 1) + ") " + sauces[i]);
         }
         while (true) {
             System.out.print("Enter the number or name of the sauce to add (or type 'done' to finish): ");
             String input = scanner.nextLine().trim();
-            if (input.equalsIgnoreCase("done")) {
+            if (input.equalsIgnoreCase("done")) { // exit check
                 break;
             }
             String sauce = null;
             try {
-                int choice = Integer.parseInt(input);
+                int choice = Integer.parseInt(input); // input format check
                 if (choice > 0 && choice <= sauces.length) {
                     sauce = sauces[choice - 1];
                 }
             } catch (Exception e) {
-                for (String option : sauces) {
+                for (String option : sauces) { // if not integer, save a string
                     if (option.equalsIgnoreCase(input)) {
                         sauce = option;
                         break;
                     }
                 }
             }
-            if (sauce == null) {
+            if (sauce == null) { // if null, print an error
                 System.out.println("Invalid input. Please enter a valid number or name.");
                 continue;
             }
