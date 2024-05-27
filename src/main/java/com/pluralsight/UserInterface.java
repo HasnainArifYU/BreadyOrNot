@@ -22,7 +22,10 @@ public class UserInterface {
     }
 
     private static boolean showHomeScreen() {
-        System.out.println("Home Screen");
+        System.out.println("\n\n");
+        System.out.println("============= BREADY OR NOT SANDWICHES ==================");
+        System.out.println("                     Welcome!                     ");
+        System.out.println("\n");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         int choice = scanner.nextInt();
@@ -44,7 +47,7 @@ public class UserInterface {
 
     private static void showOrderScreen(Order order) {
         while (true) {
-            System.out.println("Order Screen");
+            System.out.println("ORDER SCREEN\n");
             System.out.println("1) Add Sandwich");
             System.out.println("2) Add Drink");
             System.out.println("3) Add Chips");
@@ -230,7 +233,7 @@ public class UserInterface {
                 if (choice > 0 && choice <= sauces.length) {
                     sauce = sauces[choice - 1];
                 }
-            } catch (NumberFormatException e) {
+            } catch (Exception e) {
                 for (String option : sauces) {
                     if (option.equalsIgnoreCase(input)) {
                         sauce = option;
