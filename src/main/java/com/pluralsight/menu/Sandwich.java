@@ -1,4 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.menu;
+
+import com.pluralsight.interfaces.Topping;
+import com.pluralsight.sandwich.Bread;
 
 import java.util.List;
 
@@ -60,7 +63,7 @@ public class Sandwich {
 
     public void displaySandwich() {
         System.out.println("Bread: " + this.bread.getType());
-        System.out.println("Toppings : ");
+        System.out.println("Toppings: ");
         for (Topping topping : toppings) {
             System.out.println(topping.getName());
         }
@@ -71,8 +74,8 @@ public class Sandwich {
     }
 
     public String toString(){
-        String toReturn = "Bread : " + this.bread.getType();
-        toReturn += "\nToppings : \n";
+        String toReturn = "Bread: " + this.bread.getType();
+        toReturn += "\nToppings: \n";
         for (Topping topping : toppings) {
             toReturn += topping.getName()+"\n";
         }

@@ -1,4 +1,10 @@
-package com.pluralsight;
+package com.pluralsight.menu;
+
+import com.pluralsight.interfaces.Topping;
+import com.pluralsight.sandwich.Cheese;
+import com.pluralsight.sandwich.Meat;
+import com.pluralsight.sandwich.RegularToppings;
+import com.pluralsight.sandwich.Sauces;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,12 +14,7 @@ public class LoadMenu {
     public List<Meat> getMeatChoices() {
 
         List<Meat> meatChoices = new ArrayList<>();
-        //meatChoices.add(new Meat("Chicken"));
-        //meatChoices.add(new Meat("Steak"));
-        //meatChoices.add(new Meat("Ham"));
-        //meatChoices.add(new Meat("Salami"));
-        //meatChoices.add(new Meat("Roast Beef"));
-        //meatChoices.add(new Meat("Bacon"));
+
 
         return meatChoices;
     }
@@ -33,10 +34,7 @@ public class LoadMenu {
     public List<Cheese> getCheeses() {
 
         List<Cheese> cheeses = new ArrayList<>();
-        //cheeses.add(new Cheese("American"));
-        //cheeses.add(new Cheese("Provolone"));
-        //cheeses.add(new Cheese("Swiss"));
-        //cheeses.add(new Cheese("Cheddar"));
+
 
         return cheeses;
     }

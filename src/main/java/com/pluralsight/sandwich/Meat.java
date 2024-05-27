@@ -1,24 +1,30 @@
-package com.pluralsight;
+package com.pluralsight.sandwich;
 
-public class Cheese extends PremiumToppings {
+public class Meat extends PremiumToppings {
 
+    public Meat(String Name, String size) {
+        super(Name, size);
+    }
 
+    public Meat(String Name) {
+        super(Name);
+    }
 
-    public Cheese(String Name, String size, boolean isExtraCheese) {
-        super(Name, isExtraCheese, size);
+    public Meat(String meat, String size, boolean isExtraMeat) {
+        super(meat, isExtraMeat, size);
     }
 
     public double getPrice(String size) {
         double price;
         switch (size.toLowerCase()) {
             case "small":
-                price = 0.75;
+                price = 1.0;
                 break;
             case "medium":
-                price = 1.5;
+                price = 2.0;
                 break;
             case "large":
-                price = 2.25;
+                price = 3.0;
                 break;
             default:
                 throw new IllegalArgumentException("Invalid size");
@@ -26,19 +32,17 @@ public class Cheese extends PremiumToppings {
         if (isExtra()) {
             switch (size.toLowerCase()) {
                 case "small":
-                    price += 0.30;
+                    price += 0.5;
                     break;
                 case "medium":
-                    price += 0.60;
+                    price += 1.0;
                     break;
                 case "large":
-                    price += 0.9;
+                    price += 1.5;
                     break;
             }
         }
         return price;
     }
-
-
 
 }

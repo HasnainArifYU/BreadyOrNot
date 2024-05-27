@@ -1,10 +1,12 @@
-package com.pluralsight;
+package com.pluralsight.sandwich;
 
-public class RegularToppings implements Topping{
+import com.pluralsight.interfaces.Topping;
+
+public class Sauces implements Topping {
 
     private String name;
 
-    public RegularToppings(String name) {
+    public Sauces(String name) {
         this.name = name;
     }
 
@@ -18,5 +20,3 @@ public class RegularToppings implements Topping{
         return 0;
     }
 }
-
-

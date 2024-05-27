@@ -1,8 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.menu;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -65,20 +64,20 @@ public class Order {
     }
 
     public void displayOrderDetails() {
-        System.out.println("Order Details:");
+        System.out.println("Order Details: \n");
         System.out.println("Sandwiches:");
         for (Sandwich sandwich : sandwiches) {
             sandwich.displaySandwich();
         }
-        System.out.println("Drinks:");
+        System.out.println("\nDrinks:");
         for (Drink drink : drinks) {
             drink.display();
         }
-        System.out.println("Chips:");
+        System.out.println("\nChips:");
         for (Chips chips : chips) {
             chips.display();
         }
-        System.out.println("Total Price: $" + getTotal());
+        System.out.println("\nTotal Price: $" + getTotal());
     }
 
     public void createReceipt() {
@@ -86,17 +85,19 @@ public class Order {
         String dateTime = format.format(new Date());
         String filename = dateTime + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            writer.write("Order Details:\n");
+            writer.write("Order Details: \n\n");
             for (Sandwich sandwich : sandwiches) {
-                writer.write(sandwich.toString() + "\n");
+                writer.write(sandwich.toString());
             }
+            writer.write("\n");
             writer.write("Drinks:\n");
             for (Drink drink : drinks) {
-                writer.write(drink.toString() + "\n");
+                writer.write(drink.toString());
             }
+            writer.write("\n");
             writer.write("Chips:\n");
             for (Chips chips : chips) {
-                writer.write(chips.toString() + "\n");
+                writer.write(chips.toString());
             }
             writer.write("Total Price: $" + getTotal() + "\n");
         } catch (Exception e) {

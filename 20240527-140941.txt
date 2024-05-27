@@ -1,0 +1,16 @@
+Order Details:
+Bread : Wheat
+Toppings : 
+Salami
+American
+Lettuce
+Mustard
+medium
+
+Drinks:
+fanta large
+
+Chips:
+ranch chips 
+
+Total Price: $16.6

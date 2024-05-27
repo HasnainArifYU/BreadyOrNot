@@ -1,0 +1,13 @@
+Order Details: 
+
+Drinks:
+coke small
+
+coke small
+
+Chips:
+bbq chips 
+
+ranch chips 
+
+Total Price: $7.0
