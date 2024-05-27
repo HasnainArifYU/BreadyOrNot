@@ -87,7 +87,6 @@ public class Order {
         String filename = dateTime + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
             writer.write("Order Details:\n");
-            writer.write("Sandwiches:\n");
             for (Sandwich sandwich : sandwiches) {
                 writer.write(sandwich.toString() + "\n");
             }

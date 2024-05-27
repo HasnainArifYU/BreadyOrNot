@@ -8,27 +8,31 @@ public class UserInterface {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        while (true) {
-            showHomeScreen();
+        boolean exit = false;
+        while (!exit) {
+            exit = showHomeScreen();
         }
     }
 
-    private static void showHomeScreen() {
+    private static boolean showHomeScreen() {
         System.out.println("Home Screen");
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         int choice = scanner.nextInt();
-        scanner.nextLine();
+        scanner.nextLine(); // Consume the newline character
         switch (choice) {
             case 1:
                 Order order = new Order();
                 showOrderScreen(order);
                 break;
             case 0:
-                break;
+                System.out.println("Exiting...");
+                return true; // Indicate that the program should exit
             default:
                 System.out.println("Invalid choice. Please try again.");
+                break;
         }
+        return false; // Continue the loop
     }
 
     private static void showOrderScreen(Order order) {
