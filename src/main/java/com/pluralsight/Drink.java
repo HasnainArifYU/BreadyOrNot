@@ -7,8 +7,8 @@ public class Drink {
 
 
 
-    public Drink(String type, String size) {
-        this.name = type;
+    public Drink(String Name, String size) {
+        this.name = Name;
         this.size = size;
     }
 

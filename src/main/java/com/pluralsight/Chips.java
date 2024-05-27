@@ -2,11 +2,19 @@ package com.pluralsight;
 
 public class Chips {
     private String type;
-    private double price;
+    private double price = 1.5;
 
 
-    public Chips() {
-        price = 1.5;
+    public Chips(String type) {
+        this.type = type;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public double getPrice() {
@@ -16,5 +24,4 @@ public class Chips {
     public void setPrice(double price) {
         this.price = price;
     }
-
 }

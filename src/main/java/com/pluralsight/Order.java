@@ -50,4 +50,12 @@ public class Order {
     public void addSandwich(Sandwich sandwich) {
         this.sandwiches.add(sandwich);
     }
+
+    public void addDrink(Drink drink) {
+        this.drinks.add(drink);
+    }
+
+    public void addChips(Chips chips) {
+        this.addChips(chips);
+    }
 }

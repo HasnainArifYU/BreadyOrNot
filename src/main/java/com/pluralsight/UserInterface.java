@@ -49,11 +49,11 @@ public class UserInterface {
                     break;
                 case 2:
                     Drink drink = addDrink();
-                    //order.addDrink(drink);
+                    order.addDrink(drink);
                     break;
                 case 3:
                     Chips chips = addChips();
-                    //order.addChips(chips);
+                    order.addChips(chips);
                     break;
                 case 4:
                     //checkout(order);
@@ -202,8 +202,6 @@ public class UserInterface {
             boolean isExtra = scanner.nextLine().trim().equalsIgnoreCase("yes");
             toppings.add(new RegularToppings(topping));
         }
-
-
         System.out.println("Select sauces (Enter the number or name, type 'done' to finish):");
         String[] sauces = {"Ketchup", "Ranch", "Thousand Islands", "Vinaigrette", "Mayo", "Mustard", "Au Jus", "Sauce"};
         for (int i = 0; i < sauces.length; i++) {
@@ -244,19 +242,19 @@ public class UserInterface {
 
 
     private static Drink addDrink() {
-        System.out.println("Select drink size:");
+        System.out.println("Select drink size: (small, medium, large");
         String size = scanner.nextLine();
+        size = size.toLowerCase();
         System.out.println("Select drink flavor:");
         String flavor = scanner.nextLine();
 
-        return new Drink(size, flavor);
+        return new Drink(flavor, size);
     }
 
     private static Chips addChips() {
-        System.out.println("Select chip type:");
-        String type = scanner.nextLine();
-
-        return new Chips();
+        System.out.println("Please select the flavor of your chips: BBQ, Ranch, Pickle ");
+        String flavor = scanner.nextLine();
+        return new Chips(flavor);
     }
 
     /*private static void checkout(Order order) {
