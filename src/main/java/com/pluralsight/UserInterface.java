@@ -6,13 +6,13 @@ import com.pluralsight.menu.Drink;
 import com.pluralsight.menu.Order;
 import com.pluralsight.menu.Sandwich;
 import com.pluralsight.sandwich.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class UserInterface {
     private static Scanner scanner = new Scanner(System.in);
+
 
     public static void main(String[] args) {
         boolean exit = false;

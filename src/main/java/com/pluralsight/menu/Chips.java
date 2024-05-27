@@ -13,17 +13,12 @@ public class Chips {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
 
     public double getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
+
     public void display() {
         System.out.println(getType() + " chips");
     }
