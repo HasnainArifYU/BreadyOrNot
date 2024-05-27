@@ -273,7 +273,9 @@ public class UserInterface {
 
     private static void checkout(Order order) {
         System.out.println("Checkout");
+        System.out.println("-------------------------------------------------------------\n");
         order.displayOrderDetails();
+        System.out.println("-------------------------------------------------------------\n");
         System.out.println("1) Confirm");
         System.out.println("0) Cancel");
         int choice = scanner.nextInt();

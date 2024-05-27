@@ -41,6 +41,6 @@ public class Drink {
     }
 
     public String toString() {
-        return getName() +" "+ getSize()+"\n";
+        return "\n"+getName() +" "+ getSize()+"\n";
     }
 }

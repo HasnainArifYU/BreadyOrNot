@@ -65,7 +65,7 @@ public class Order {
 
     public void displayOrderDetails() {
         System.out.println("Order Details: \n");
-        System.out.println("Sandwiches:");
+        System.out.println("Sandwiches: \n");
         for (Sandwich sandwich : sandwiches) {
             sandwich.displaySandwich();
         }
@@ -89,8 +89,7 @@ public class Order {
             for (Sandwich sandwich : sandwiches) {
                 writer.write(sandwich.toString());
             }
-            writer.write("\n");
-            writer.write("Drinks:\n");
+            writer.write("\nDrinks:");
             for (Drink drink : drinks) {
                 writer.write(drink.toString());
             }
@@ -99,7 +98,7 @@ public class Order {
             for (Chips chips : chips) {
                 writer.write(chips.toString());
             }
-            writer.write("Total Price: $" + getTotal() + "\n");
+            writer.write("\n\nTotal Price: $" + getTotal() + "\n");
         } catch (Exception e) {
             System.out.println("An error occurred while writing the receipt.");
             e.printStackTrace();

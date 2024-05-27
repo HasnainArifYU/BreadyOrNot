@@ -67,21 +67,21 @@ public class Sandwich {
         for (Topping topping : toppings) {
             System.out.println(topping.getName());
         }
-        System.out.println(this.size);
+        System.out.println("size: "+this.size);
         if (isToasted) {
             System.out.println("toasted.");
         }
     }
 
     public String toString(){
-        String toReturn = "Bread: " + this.bread.getType();
+        String toReturn = this.bread.getType() + " Bread ";
         toReturn += "\nToppings: \n";
         for (Topping topping : toppings) {
             toReturn += topping.getName()+"\n";
         }
-        toReturn += this.size+ "\n";
+        toReturn += this.size+ " size \n";
         if (isToasted) {
-            toReturn += "toasted.";
+            toReturn += "toasted";
         }
         return toReturn;
     }
