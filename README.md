@@ -5,7 +5,8 @@
 BreadyOrNot is a Java-based console application that allows users to create customized sandwiches with a variety of options. The program guides users through a series of prompts to select their desired bread, size, meats, cheeses, regular toppings, and sauces, with the option to add extra quantities of selected ingredients. Once the sandwich is fully customized, the program outputs the details of the created sandwich, including all selected toppings and whether it is toasted.
 
 
-![Class Diagram](path/to/your/class_diagram.png)
+![UML Diagram](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/0957a642-6147-465a-9f89-64a5f09fd237)
+
 
 ## User Stories
 
