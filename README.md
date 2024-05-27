@@ -55,9 +55,20 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Demo
 
-Include screenshots or GIFs that show your application in action. Use tools like [Giphy Capture](https://giphy.com/apps/giphycapture) to record a GIF of your application.
+HOME SCREEN ![Screenshot 2024-05-27 170807](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/62f39e30-59e2-48c2-aa79-4a5688434a34)
 
-![Application Screenshot](path/to/your/screenshot.png)
+Creating a New Sandwich![Screenshot 2024-05-27 170940](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/98904b1a-12d4-441a-8a0f-7fcda89e7577)
+
+![Screenshot 2024-05-27 171048](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/e9fdd4a1-bd80-4452-9330-65255fd1de74)
+
+Adding a chips and drink![Screenshot 2024-05-27 171154](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/fe627a42-07e7-42c0-bd08-d20d18c549ed)
+
+Check out![Screenshot 2024-05-27 171247](https://github.com/HasnainArifYU/BreadyOrNot/assets/166551521/87044e87-7055-4267-9d5d-25acc5549604)
+
+
+
+
+
 
 ## Future Work
 
