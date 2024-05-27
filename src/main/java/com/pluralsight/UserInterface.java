@@ -19,7 +19,7 @@ public class UserInterface {
         System.out.println("1) New Order");
         System.out.println("0) Exit");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine();
         switch (choice) {
             case 1:
                 Order order = new Order();
@@ -27,12 +27,12 @@ public class UserInterface {
                 break;
             case 0:
                 System.out.println("Exiting...");
-                return true; // Indicate that the program should exit
+                return true;
             default:
                 System.out.println("Invalid choice. Please try again.");
                 break;
         }
-        return false; // Continue the loop
+        return false;
     }
 
     private static void showOrderScreen(Order order) {
@@ -44,7 +44,7 @@ public class UserInterface {
             System.out.println("4) Checkout");
             System.out.println("0) Cancel Order");
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:

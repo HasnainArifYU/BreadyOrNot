@@ -99,7 +99,7 @@ public class Order {
                 writer.write(chips.toString() + "\n");
             }
             writer.write("Total Price: $" + getTotal() + "\n");
-        } catch (IOException e) {
+        } catch (Exception e) {
             System.out.println("An error occurred while writing the receipt.");
             e.printStackTrace();
         }

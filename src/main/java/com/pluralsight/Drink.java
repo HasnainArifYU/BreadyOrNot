@@ -43,4 +43,8 @@ public class Drink {
     public void display() {
         System.out.println(getName() +" "+ getSize());
     }
+
+    public String toString() {
+        return getName() +" "+ getSize()+"\n";
+    }
 }

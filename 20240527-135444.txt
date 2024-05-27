@@ -1,0 +1,12 @@
+Order Details:
+Bread : White
+ Toppings : 
+Steak
+American
+large
+
+Drinks:
+pepsi large
+Chips:
+bbq chips
+Total Price: $20.65

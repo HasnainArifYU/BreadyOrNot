@@ -27,4 +27,7 @@ public class Chips {
     public void display() {
         System.out.println(getType() + " chips");
     }
+    public String toString() {
+        return getType() + " chips \n";
+    }
 }

@@ -69,4 +69,17 @@ public class Sandwich {
             System.out.println("toasted.");
         }
     }
+
+    public String toString(){
+        String toReturn = "Bread : " + this.bread.getType();
+        toReturn += "\nToppings : \n";
+        for (Topping topping : toppings) {
+            toReturn += topping.getName()+"\n";
+        }
+        toReturn += this.size+ "\n";
+        if (isToasted) {
+            toReturn += "toasted.";
+        }
+        return toReturn;
+    }
 }
