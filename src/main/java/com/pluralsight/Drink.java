@@ -39,4 +39,8 @@ public class Drink {
                 throw new IllegalArgumentException("Invalid size: " + size);
         }
     }
+
+    public void display() {
+        System.out.println(getName() + getSize());
+    }
 }

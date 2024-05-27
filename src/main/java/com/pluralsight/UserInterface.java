@@ -56,7 +56,7 @@ public class UserInterface {
                     order.addChips(chips);
                     break;
                 case 4:
-                    //checkout(order);
+                    checkout(order);
                     return;
                 case 0:
                     return;
@@ -257,13 +257,13 @@ public class UserInterface {
         return new Chips(flavor);
     }
 
-    /*private static void checkout(Order order) {
+    private static void checkout(Order order) {
         System.out.println("Checkout");
         order.displayOrderDetails();
         System.out.println("1) Confirm");
         System.out.println("0) Cancel");
         int choice = scanner.nextInt();
-        scanner.nextLine();  // Consume newline
+        scanner.nextLine();
 
         if (choice == 1) {
             order.createReceipt();
@@ -271,6 +271,6 @@ public class UserInterface {
         } else {
             System.out.println("Order cancelled. Returning to home screen.");
         }
-    }*/
+    }
 }
 

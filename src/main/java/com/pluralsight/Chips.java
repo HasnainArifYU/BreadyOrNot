@@ -24,4 +24,7 @@ public class Chips {
     public void setPrice(double price) {
         this.price = price;
     }
+    public void display() {
+        System.out.println(getType() + " chips");
+    }
 }

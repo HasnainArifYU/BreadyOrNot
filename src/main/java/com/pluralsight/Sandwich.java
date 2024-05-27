@@ -54,8 +54,19 @@ public class Sandwich {
         total += bread.getPrice(size);
         for (Topping topping : toppings) {
             total+=topping.getPrice(size);
-
         }
         return total;
+    }
+
+    public void displaySandwich() {
+        System.out.println("Bread: " + this.getBread());
+        System.out.println("Toppings : ");
+        for (Topping topping : toppings) {
+            System.out.println(getToppings());
+        }
+        System.out.println(this.size);
+        if (isToasted) {
+            System.out.println("toasted.");
+        }
     }
 }
