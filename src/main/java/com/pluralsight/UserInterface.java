@@ -9,7 +9,6 @@ import java.util.Scanner;
 
 public class UserInterface {
      static Scanner scanner = new Scanner(System.in);
-     private Menu menu = new Menu();
 
     public static void main(String[] args) {
         boolean exit = false;
@@ -151,7 +150,7 @@ public class UserInterface {
                 System.out.println("Invalid input. Defaulting to 'Steak'.");
                 break;
         }
-        System.out.print("Do you want extra " + meat + "? (yes/no): "); //Asking for extra meat
+        System.out.print("Do you want extra " + meat + "? (YES/NO): "); //Asking for extra meat
         boolean isExtraMeat = scanner.nextLine().trim().equalsIgnoreCase("yes");
         toppings.add(new Meat(meat, size, isExtraMeat));
 
@@ -181,7 +180,7 @@ public class UserInterface {
                 System.out.println("Invalid input. Defaulting to 'American'.");
                 break;
         }
-        System.out.print("Do you want extra " + cheese + "? (yes/no): ");
+        System.out.print("Do you want extra " + cheese + "? (YES/NO): ");
         boolean isExtraCheese = scanner.nextLine().trim().equalsIgnoreCase("yes");
         toppings.add(new Cheese(cheese, size, isExtraCheese));
 
@@ -215,7 +214,7 @@ public class UserInterface {
                 System.out.println("Invalid input. Please enter a valid number or name.");
                 continue;
             }
-            System.out.print("Do you want extra " + topping + "? (yes/no): ");
+            System.out.print("Do you want extra " + topping + "? (YES?NO): ");
             boolean isExtra = scanner.nextLine().trim().equalsIgnoreCase("yes");
             toppings.add(new RegularToppings(topping));
         }
@@ -248,11 +247,11 @@ public class UserInterface {
                 System.out.println("Invalid input. Please enter a valid number or name.");
                 continue;
             }
-            System.out.print("Do you want extra " + sauce + "? (yes/no): ");
+            System.out.print("Do you want extra " + sauce + "? (YES/NO): ");
             boolean isExtra = scanner.nextLine().trim().equalsIgnoreCase("yes");
             toppings.add(new Sauces(sauce));
         }
-        System.out.println("Would you like the sandwich toasted? (yes/no)");
+        System.out.println("Would you like the sandwich toasted? (YES/NO)");
         boolean toasted = scanner.nextLine().equalsIgnoreCase("yes");
         return new Sandwich(bread1, toppings, size, toasted);
     }

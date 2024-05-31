@@ -1,0 +1,18 @@
+Order Details: 
+----------------------------------
+Customer Name: h
+Customer Number: 5168089567
+----------------------------------
+
+Sandwiches: 
+
+
+Drinks:
+pepsi small
+
+
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $3.5
