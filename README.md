@@ -26,9 +26,7 @@ As a customer, I want the application to confirm my sandwich choices so that I c
 
 As a customer, I want to receive a summary of my customized sandwich so that I can see all the ingredients I have selected.
 
-As a user, I want to be able to input my data so that the application can process it accordingly.
 
-As a user, I want to receive immediate feedback so that I can understand what to do next.
 
 ## Setup
 
