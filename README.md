@@ -74,8 +74,8 @@ Check out![Screenshot 2024-05-27 171247](https://github.com/HasnainArifYU/Bready
 
 Outline potential future enhancements or functionalities you might consider adding:
 
-- Additional feature to be developed.
-- Improvement of current functionalities.
+- Offer a selection of pre-made menu options or combo meals, featuring popular combinations of sandwiches, drinks, and sides for quick and convenient ordering.
+- A colorful graphical user interface with pictures
 
 ## Resources
 
