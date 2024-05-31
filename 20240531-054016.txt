@@ -1,0 +1,14 @@
+Order Details: 
+----------------------------------
+Customer Name: h
+Customer Number: 123456789
+
+ Sanwiches: 
+Drinks:
+sake medium
+
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $4.0

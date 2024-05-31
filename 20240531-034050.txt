@@ -1,0 +1,10 @@
+Order Details: 
+----------------------------------
+Drinks:
+pepsi small
+
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $3.5

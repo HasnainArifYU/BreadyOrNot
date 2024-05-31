@@ -8,14 +8,48 @@ import java.util.Date;
 import java.util.List;
 
 public class Order {
+    String CustomerName;
+    String CustomerNumber;
     List<Sandwich> sandwiches;
     List<Drink> drinks;
     List<Chips> chips;
+
+    public Order(String customerName, String customerNumber, List<Sandwich> sandwiches, List<Drink> drinks, List<Chips> chips) {
+        CustomerName = customerName;
+        CustomerNumber = customerNumber;
+        this.sandwiches = sandwiches;
+        this.drinks = drinks;
+        this.chips = chips;
+    }
 
     public Order(List<Sandwich> sandwiches, List<Drink> drinks, List<Chips> chips) {
         this.sandwiches = sandwiches;
         this.drinks = drinks;
         this.chips = chips;
+    }
+
+    public Order(String customerName, String customerNumber) {
+        CustomerName = customerName;
+        CustomerNumber = customerNumber;
+        sandwiches = new ArrayList<Sandwich>();
+        drinks = new ArrayList<Drink>();
+        chips = new ArrayList<Chips>();
+    }
+
+    public String getCustomerName() {
+        return CustomerName;
+    }
+
+    public void setCustomerName(String customerName) {
+        CustomerName = customerName;
+    }
+
+    public String getCustomerNumber() {
+        return CustomerNumber;
+    }
+
+    public void setCustomerNumber(String customerNumber) {
+        CustomerNumber = customerNumber;
     }
 
     public Order() {
@@ -85,19 +119,25 @@ public class Order {
         String dateTime = format.format(new Date());
         String filename = dateTime + ".txt";
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filename))) {
-            writer.write("Order Details: \n\n");
+            writer.write("Order Details: \n");
+            writer.write("----------------------------------\n");
+            writer.write("Customer Name: " + this.getCustomerName()+"\n");
+            writer.write(("Customer Number: " + this.getCustomerNumber()+"\n"));
+            writer.write("----------------------------------\n");
+            writer.write("\nSandwiches: \n");
             for (Sandwich sandwich : sandwiches) {
                 writer.write(sandwich.toString());
             }
-            writer.write("\nDrinks:");
+            writer.write("\n\nDrinks:");
             for (Drink drink : drinks) {
                 writer.write(drink.toString());
             }
-            writer.write("\n");
-            writer.write("Chips:\n");
+
+            writer.write("\n\nChips:\n");
             for (Chips chips : chips) {
                 writer.write(chips.toString());
             }
+            writer.write("----------------------------------------");
             writer.write("\n\nTotal Price: $" + getTotal() + "\n");
         } catch (Exception e) {
             System.out.println("An error occurred while writing the receipt.");

@@ -1,18 +1,15 @@
 package com.pluralsight;
 
 import com.pluralsight.interfaces.Topping;
-import com.pluralsight.menu.Chips;
-import com.pluralsight.menu.Drink;
-import com.pluralsight.menu.Order;
-import com.pluralsight.menu.Sandwich;
+import com.pluralsight.menu.*;
 import com.pluralsight.sandwich.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class UserInterface {
-    private static Scanner scanner = new Scanner(System.in);
-
+     static Scanner scanner = new Scanner(System.in);
+     private Menu menu = new Menu();
 
     public static void main(String[] args) {
         boolean exit = false;
@@ -32,7 +29,11 @@ public class UserInterface {
         scanner.nextLine();
         switch (choice) {
             case 1:
-                Order order = new Order();
+                System.out.println("Please Enter Your Name: ");
+                String Name = scanner.nextLine();
+                System.out.println("Now please enter your Phone Number: ");
+                String Number = scanner.nextLine();
+                Order order = new Order(Name, Number);
                 showOrderScreen(order);
                 break;
             case 0:
@@ -44,6 +45,8 @@ public class UserInterface {
         }
         return false;
     }
+
+
 
     private static void showOrderScreen(Order order) {
         while (true) {
@@ -283,9 +286,9 @@ public class UserInterface {
 
         if (choice == 1) {
             order.createReceipt();
-            System.out.println("Order confirmed. Returning to home screen.");
+            System.out.println("Order Confirmed. Returning to home screen.");
         } else {
-            System.out.println("Order cancelled. Returning to home screen.");
+            System.out.println("Order Cancelled. Returning to home screen.");
         }
     }
 }

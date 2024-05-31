@@ -1,6 +1,0 @@
-Order Details:
-Sandwiches:
-Drinks:
-com.pluralsight.menu.Drink@65b3120a
-Chips:
-Total Price: $2.0

@@ -1,0 +1,24 @@
+Order Details: 
+----------------------------------
+Customer Name: Husnain
+Customer Number: 5168089567
+
+Sandwiches: 
+White Bread 
+Toppings: 
+Bacon
+American
+Mushrooms
+Ranch
+small size 
+
+
+Drinks:
+pepsi medium
+
+
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $11.25

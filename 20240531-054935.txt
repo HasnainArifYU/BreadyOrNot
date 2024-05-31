@@ -1,0 +1,16 @@
+Order Details: 
+----------------------------------
+Customer Name: Husnain
+Customer Number: 5168089567
+----------------------------------
+
+Sandwiches: 
+
+
+Drinks:
+
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $1.5

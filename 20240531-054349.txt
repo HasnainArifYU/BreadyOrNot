@@ -1,0 +1,21 @@
+Order Details: 
+----------------------------------
+Customer Name: Husnain
+Customer Number: 5168089567
+
+Sanwiches: 
+White Bread 
+Toppings: 
+Steak
+American
+Lettuce
+Tomatoes
+Mayo
+Ranch
+small size 
+toasted
+Drinks:
+Chips:
+----------------------------------------
+
+Total Price: $7.75

@@ -1,0 +1,11 @@
+Order Details: 
+----------------------------------
+Customer Name: h
+Customer Number: 123456789
+
+Drinks:
+Chips:
+bbq chips 
+----------------------------------------
+
+Total Price: $1.5

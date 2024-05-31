@@ -1,9 +1,0 @@
-Order Details: 
-
-
-Drinks:pepsi medium
-dr pepper large
-
-Chips:bbq chips 
-ranch chips 
-Total Price: $8.5
