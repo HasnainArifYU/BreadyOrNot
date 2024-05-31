@@ -26,7 +26,7 @@ public class UserInterface {
         System.out.println("============= BREADY OR NOT SANDWICHES ==================");
         System.out.println("                     Welcome!                     ");
         System.out.println("\n");
-        System.out.println("1) New Order");
+        System.out.println("1) Start a New Order");
         System.out.println("0) Exit");
         int choice = scanner.nextInt();
         scanner.nextLine();
@@ -36,7 +36,7 @@ public class UserInterface {
                 showOrderScreen(order);
                 break;
             case 0:
-                System.out.println("Exiting...");
+                System.out.println("Thank You for visiting!");
                 return true;
             default:
                 System.out.println("Invalid choice. Please try again.");
@@ -289,4 +289,3 @@ public class UserInterface {
         }
     }
 }
-
