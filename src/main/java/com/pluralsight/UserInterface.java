@@ -214,7 +214,7 @@ public class UserInterface {
                 System.out.println("Invalid input. Please enter a valid number or name.");
                 continue;
             }
-            System.out.print("Do you want extra " + topping + "? (YES?NO): ");
+            System.out.print("Do you want extra " + topping + "? (YES/NO): ");
             boolean isExtra = scanner.nextLine().trim().equalsIgnoreCase("yes");
             toppings.add(new RegularToppings(topping));
         }

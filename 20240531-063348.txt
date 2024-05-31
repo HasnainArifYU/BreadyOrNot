@@ -1,0 +1,24 @@
+Order Details: 
+----------------------------------
+Customer Name: Husnain
+Customer Number: 5168089567
+----------------------------------
+
+Sandwiches: 
+White Bread 
+Toppings: 
+Ham
+American
+Lettuce
+Ketchup
+Small size 
+toasted
+
+Drinks:
+pepsi small
+
+
+Chips:
+----------------------------------------
+
+Total Price: $9.55
